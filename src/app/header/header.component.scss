@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+
+header {
+    font-family: 'Raleway', sans-serif;
+    nav {
+        background-color: #fff !important;
+        #navbarNav {
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .navbar-nav {
+                width: 100%;
+                max-width: 1400px;
+                justify-content: space-around;
+
+                li {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    height: 100px;
+
+                    a {
+                        color: $text--color;
+                        font-weight: 500;
+                        letter-spacing: 2.5px;
+                        transition: all 0.5s;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-alt {
+        img {
+            max-width: 200px;
+        }
+    }
+
+    .flag-icons {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        align-items: flex-start !important;
+
+        a {
+            display: block;
+            font-weight: normal !important;
+            font-size: 10px;
+            letter-spacing: 1px !important;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .navbar-brand {
+            display: none;
+        }
+    }
+}
